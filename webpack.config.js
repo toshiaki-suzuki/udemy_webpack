@@ -14,6 +14,7 @@ module.exports = {
         use: [ // どのloaderを使うかを設定　下から順に実行される。
           'style-loader',
           'css-loader',
+          'postcss-loader',
           'sass-loader'
         ]
       }

@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss-loader": "^6.2.1"
+  },
   "devDependencies": {
     "css-loader": "^6.6.0",
     "sass": "^1.49.7",
