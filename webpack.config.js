@@ -17,6 +17,19 @@ module.exports = {
           'postcss-loader',
           'sass-loader'
         ]
+      },
+      {
+        test:/\(jpe?g|gif|png|svg|woff2|ttf|eot)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images', // 出力先でimagesというフォルダを生成
+              publicPath: 'images'
+            }
+          }
+        ]
       }
     ]
   }
